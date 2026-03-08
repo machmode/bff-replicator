@@ -1,0 +1,16 @@
+[package]
+name = "bff-replicator"
+version = "0.1.0"
+edition = "2021"
+description = """
+A faithful Rust implementation of the BFF (Brainfuck Family) primordial soup experiment
+from "Computational Life: How Well-formed, Self-replicating Programs Emerge from Simple
+Interaction" (Agüera y Arcas et al., 2024). Demonstrates spontaneous emergence of
+self-replicating programs from random initial conditions without any fitness function.
+"""
+
+[dependencies]
+rand = "0.8"
+clap = { version = "4", features = ["derive"] }
+brotli = "7"
+rayon = "1.10"
