@@ -1,6 +1,6 @@
 # BFF-Replicator
 
-This project is a pure Rust implementation of the BFF (Brainfuck Family) primordial soup experiment from:
+This project is a pure Rust implementation of the BFF (Brainfuck Family) primordial soup experiment from Google Research:
 
 > **"Computational Life: How Well-formed, Self-replicating Programs Emerge from Simple Interaction"**
 > Agüera y Arcas et al. (2024) — [arXiv:2406.19108](https://arxiv.org/abs/2406.19108)
@@ -8,8 +8,8 @@ This project is a pure Rust implementation of the BFF (Brainfuck Family) primord
 Note that this was largely derived from the paper, so there may be differences with the original 
 implementation (which includes a CUDA option).
 
-This project provides a (optionally) RAYON-based parallel thread implementation of a
-self-modifying soup of BF programs. These demonstrate emergence of self-replicators. 
+This project provides a (optional) RAYON-based parallel threaded implementation of a
+self-modifying soup of BF programs. This code demonstrate emergence of self-replicators. 
 
 The paper reports that phase transitions occur ~40% of the time in test runs, however
 I have not yet run enough experiments to verify this metric. In practice phase transitions
@@ -22,7 +22,7 @@ You can then run a simulation with
 
   `./bff-replicator --soup-size 131072 --parallel --seed 1567861621370340275`
   
-to replicate the paper conditions. The seed here did trigger replication but there is
+to replicate the paper conditions. The seed used here did trigger replication but there is
 no guarantee this will happen on your machine (as the RND generator will differ).
 
 If seed is omitted then a random seed will be chosen - but will be printed to the screen 
