@@ -22,7 +22,7 @@ You can then run a simulation with
 
   `./bff-replicator --soup-size 131072 --parallel --seed 1567861621370340275`
   
-to replicator the paper conditions. The seed here did trigger replication but there is
+to replicate the paper conditions. The seed here did trigger replication but there is
 no guarantee this will happen on your machine (as the RND generator will differ).
 
 If seed is omitted then a random seed will be chosen - but will be printed to the screen 
