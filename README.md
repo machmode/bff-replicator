@@ -8,6 +8,8 @@ This project is a pure Rust implementation of the BFF (Brainfuck Family) primord
 Note that this was largely derived from the paper, so there may be differences with the original 
 implementation (which includes a CUDA option).
 
+Code in PoC grade so caveat exemptor...
+
 This project provides a (optional) RAYON-based parallel threaded implementation of a
 self-modifying soup of BF programs. This code demonstrate emergence of self-replicators. 
 
